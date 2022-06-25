@@ -1,14 +1,12 @@
 #include <iostream>
-#include "ColorPair.h"
-#include "ColorPairEnum.h"
 #include "testColorPair.h"
-
-
+#include "DisplayOutput.h"
 
 int main()
 {
-     testColorPair testColorPairObj;
-    testColorPairObj.displayPairMap();
+    testColorPair testColorPairObj;
+    DisplayOutput DisplayOutputObj;
+    DisplayOutputObj.displayPairMap();
     testColorPairObj.testNumberToPair(4, WHITE, BROWN);
     testColorPairObj.testNumberToPair(5, WHITE, SLATE);
 
